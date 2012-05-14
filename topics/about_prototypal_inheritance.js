@@ -55,13 +55,7 @@ extend(Bat, Mammal);
 
 test("Inheritance", function() {
     var lenny = new Bat("Lenny", "1.5m");
-    equals(lenny.sayHi(), __, "what does Lenny say?");
-    equals(lenny.wingspan, __, "what is Lenny's wingspan?");
-});
-
-test("Inheritance", function() {
-    var lenny = new Bat("Lenny", "1.5m");
-    equals(lenny.sayHi(), __, "what does Lenny say?");
-    equals(lenny.wingspan, __, "what is Lenny's wingspan?");
+    equals(lenny.sayHi(), "Hello, my name is Lenny", "what does Lenny say?");
+    equals(lenny.wingspan, "1.5m", "what is Lenny's wingspan?");
 });
 
